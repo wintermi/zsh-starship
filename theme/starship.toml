@@ -1,7 +1,7 @@
 format = """
 $os\
 [](bg:#6992D7 fg:#C0CAF5)\
-$directory\
+$custom$directory\
 [](fg:#6992D7 bg:#394260)\
 $git_branch\
 $git_status\
@@ -72,11 +72,22 @@ Unknown = ""
 Windows = ""
 
 [directory]
-truncation_length = 3
-truncation_symbol = "…/"
+truncation_length = 0
+truncation_symbol = ".../"
 truncate_to_repo = false
+fish_style_pwd_dir_length = 1
 style = "bold fg:#EEEEEE bg:#6992D7"
-format = "[  $path ]($style)"
+format = "[ $path ]($style)"
+
+[custom.home]
+when = ''' test "$HOME" = "$PWD" '''
+style = "bold fg:#EEEEEE bg:#6992D7"
+symbol = " "
+
+[custom.folder]
+when = ''' test "$HOME" != "$PWD" '''
+style = "bold fg:#EEEEEE bg:#6992D7"
+symbol = " "
 
 [directory.substitutions]
 "Documents" = " "
