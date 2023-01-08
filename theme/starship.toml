@@ -72,10 +72,11 @@ Unknown = ""
 Windows = ""
 
 [directory]
-style = "bold fg:#EEEEEE bg:#6992D7"
-format = "[  $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
+truncate_to_repo = false
+style = "bold fg:#EEEEEE bg:#6992D7"
+format = "[  $path ]($style)"
 
 [directory.substitutions]
 "Documents" = " "
