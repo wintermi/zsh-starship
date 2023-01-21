@@ -1,5 +1,5 @@
 # zsh-starship
-A simple zsh plugin to use the Starship prompt, along with a powerline theme.
+A zsh plugin to use the Starship prompt, along with a powerline theme.
 
 ## Install
 Using the [:zap: Zap](https://www.zapzsh.org/) minimal zsh plugin manager, add the following to your `.zshrc`
@@ -10,7 +10,7 @@ plug "wintermi/zsh-starship"
 ```
 
 ## Prerequisite Checks
-A simple check will be performed to verify that `starship` has been installed:
+A check will be performed to verify that `starship` has been installed:
 
 - [`starship`](https://starship.rs/) - The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
