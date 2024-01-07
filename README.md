@@ -1,6 +1,6 @@
 # zsh-starship
 
-A zsh plugin to use the Starship prompt, along with a powerline theme.
+A zsh plugin to manage the Starship prompt, along with providing a default powerline like theme.
 
 ## Install
 
