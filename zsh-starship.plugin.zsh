@@ -7,9 +7,10 @@ if ! (( $+commands[starship] )); then
     return
 fi
 
-# If the 'STARSHIP_CONFIG' environment variable is not populated then set
-# the default theme configuration to the one provided with this plugin
-if [[ -z "$STARSHIP_CONFIG" ]]; then
+# If the 'STARSHIP_CONFIG' environment variable is not populated and 
+# there is no default configuration is present then set the default
+# theme configuration to the one provided with this plugin
+if [[ -z "$STARSHIP_CONFIG" &&  ! -f "$HOME/.config/starship.toml" ]]; then
     export STARSHIP_CONFIG="${0:A:h}/theme/starship.toml"
 fi
 

@@ -96,12 +96,12 @@ style = 'bold fg:text_two bg:bar_two'
 format = '[ $path ]($style)'
 
 [custom.home]
-when = ''' test '$HOME' = '$PWD' '''
+when = ' test "$HOME" = "$PWD" '
 style = 'bold fg:text_two bg:bar_two'
 symbol = ' '
 
 [custom.folder]
-when = ''' test '$HOME' != '$PWD' '''
+when = ' test "$HOME" != "$PWD" '
 style = 'bold fg:text_two bg:bar_two'
 symbol = ' '
 
@@ -207,6 +207,6 @@ format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
-time_format = '%R' # Hour:Minute Format
+time_format = '%R'                   # Hour:Minute Format
 style = 'fg:text_three bg:bar_three'
 format = '[   $time ]($style)'
