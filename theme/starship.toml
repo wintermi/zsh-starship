@@ -106,9 +106,9 @@ style = 'bold fg:text_two bg:bar_two'
 symbol = ' '
 
 [directory.substitutions]
-'Documents' = ' '
-'Downloads' = ' '
-'Music' = ' '
+'Documents' = ' '
+'Downloads' = ' '
+'Music' = ' '
 'Pictures' = ' '
 
 [git_branch]
