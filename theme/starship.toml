@@ -183,7 +183,7 @@ format = '[ $symbol ($version) ]($style)'
 [python]
 symbol = ' '
 style = 'fg:text_three bg:bar_four'
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ($version) (\($virtualenv\) )]($style)'
 
 [rlang]
 symbol = 'ﳒ '
