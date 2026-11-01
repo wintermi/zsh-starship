@@ -4,7 +4,7 @@ A zsh plugin to manage the Starship prompt, along with providing a default power
 
 ## Install
 
-Using the [:zap: Zap](https://www.zapzsh.org/) minimal zsh plugin manager, add the following to your `.zshrc`
+Using the [:zap: Zap](https://www.zapzsh.com/) minimal zsh plugin manager, add the following to your `.zshrc`
 
 ```sh
 # Install plugin
